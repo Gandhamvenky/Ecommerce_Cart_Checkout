@@ -35,13 +35,11 @@ The application follows a **clean layered architecture**:
 
 ## Shopping Cart
 
-* Add product to cart
-* Update cart item quantity
-* Remove product from cart
-* View user cart
-* Automatic total price calculation
-* Quantity validation
-* Stock validation before adding/updating
+* Add products to cart  
+* Update item quantities  
+* Remove items  
+* View cart with automatic total calculation  
+* Stock validation before checkout
 
 ---
 
