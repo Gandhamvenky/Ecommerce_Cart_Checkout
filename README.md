@@ -274,7 +274,7 @@ http://localhost:8080/swagger-ui/index.html
 
 ```bash
 # Replace with your repository URL. Example (insert your repository name after the username):
-git clone https://github.com/Gandhamvenky/Ecommerce-Cart-Checkout.git
+git clone https://github.com/Gandhamvenky/Ecommerce_Cart_Checkout.git
 
 # Or visit the GitHub profile: https://github.com/Gandhamvenky
 
