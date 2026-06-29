@@ -26,13 +26,10 @@ The application follows a **clean layered architecture**:
 
 ## Product Management
 
-* Add new products
-* Update product details
-* Delete products
-* View product by ID
-* View all products
-* Pagination and sorting support
-* Inventory management
+* Add, update, delete products  
+* View products by ID or list all  
+* Pagination and sorting support  
+* Inventory tracking
 
 ---
 
