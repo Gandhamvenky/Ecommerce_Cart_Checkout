@@ -2,9 +2,15 @@
 
 ## Project Overview
 
-The **E-Commerce Backend System** is a production-style RESTful backend application developed using **Java Spring Boot**. It simulates the core functionalities of an online shopping platform by providing APIs for user management, product management, shopping cart operations, coupon management, checkout, inventory validation, and order processing.
+This project is a **Spring Boot RESTful backend application** that simulates the checkout flow of an e-commerce platform.  
+It provides APIs for managing users, products, shopping carts, coupons, and secure checkout.
 
-The application follows a layered architecture consisting of **Controller, Service, Repository, DTO, and Entity** layers. It demonstrates enterprise development practices including transaction management, exception handling, logging, validation, pagination, Swagger documentation, and unit testing.
+The application follows a **clean layered architecture**:
+- **Controller** → Handles API requests and responses  
+- **Service** → Contains business logic  
+- **Repository** → Manages database operations  
+- **Entity** → Defines database models  
+- **DTOs** → Structures request/response payloads
 
 ---
 
