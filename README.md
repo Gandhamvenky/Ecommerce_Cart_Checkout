@@ -1,10 +1,16 @@
-# E-Commerce Backend System
+# E-Commerce_Cart_Checkout_Module
 
 ## Project Overview
 
-The **E-Commerce Backend System** is a production-style RESTful backend application developed using **Java Spring Boot**. It simulates the core functionalities of an online shopping platform by providing APIs for user management, product management, shopping cart operations, coupon management, checkout, inventory validation, and order processing.
+This project is a **Spring Boot RESTful backend application** that simulates the checkout flow of an e-commerce platform.  
+It provides APIs for managing users, products, shopping carts, coupons, and secure checkout.
 
-The application follows a layered architecture consisting of **Controller, Service, Repository, DTO, and Entity** layers. It demonstrates enterprise development practices including transaction management, exception handling, logging, validation, pagination, Swagger documentation, and unit testing.
+The application follows a **clean layered architecture**:
+- **Controller** → Handles API requests and responses  
+- **Service** → Contains business logic  
+- **Repository** → Manages database operations  
+- **Entity** → Defines database models  
+- **DTOs** → Structures request/response payloads  
 
 ---
 
@@ -12,48 +18,36 @@ The application follows a layered architecture consisting of **Controller, Servi
 
 ## User Management
 
-* Register new users
-* Retrieve user information
-* Update user details
-* Delete users
-* Input validation using Jakarta Validation
+- Register, update, delete users  
+- Retrieve user details  
+- Input validation with Jakarta Validation  
 
 ---
 
 ## Product Management
 
-* Add new products
-* Update product details
-* Delete products
-* View product by ID
-* View all products
-* Pagination and sorting support
-* Inventory management
+- Add, update, delete products  
+- View products by ID or list all  
+- Pagination and sorting support  
+- Inventory tracking 
 
 ---
 
 ## Shopping Cart
 
-* Add product to cart
-* Update cart item quantity
-* Remove product from cart
-* View user cart
-* Automatic total price calculation
-* Quantity validation
-* Stock validation before adding/updating
+- Add products to cart  
+- Update item quantities  
+- Remove items  
+- View cart with automatic total calculation  
+- Stock validation before checkout 
 
 ---
 
 ## Coupon Management
 
-* Create coupons
-* Retrieve coupon by ID
-* Retrieve coupon by coupon code
-* Update coupon
-* Delete coupon
-* View all coupons with pagination
-* Coupon activation/deactivation
-* Coupon expiry validation
+- Create and manage discount coupons  
+- Apply coupons during checkout  
+- Validate coupon usage
 
 ---
 
@@ -61,20 +55,9 @@ The application follows a layered architecture consisting of **Controller, Servi
 
 The checkout workflow performs multiple business validations:
 
-* Validate user
-* Validate cart
-* Validate cart is not empty
-* Validate available inventory
-* Validate coupon
-* Validate coupon expiry
-* Validate coupon active status
-* Apply coupon discount
-* Simulate payment
-* Reduce inventory after successful payment
-* Create order
-* Create order items
-* Clear cart after successful checkout
-* Generate order summary
+- Secure checkout flow  
+- Validate inventory before order confirmation  
+- Generate order summary and status tracking  
 
 All checkout operations are executed inside a **single transaction** using `@Transactional`.
 
@@ -263,7 +246,7 @@ All checkout business scenarios are covered through unit tests.
 Swagger UI is integrated for interactive API documentation.
 
 ```
-http://localhost:8080/swagger-ui/index.html
+http://localhost:8081/swagger-ui/index.html
 ```
 
 ---
@@ -298,7 +281,7 @@ CREATE DATABASE ecommerce_db;
 Update `application.properties`:
 
 ```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/ecommerce_db
+spring.datasource.url=jdbc:mysql://localhost:3306/ecommerce_data
 spring.datasource.username=root
 spring.datasource.password=<your_password>
 ```
@@ -397,12 +380,21 @@ src
 
 # Author
 
-**Shaik Mohammad Ali**
+**Gandham Venkatesh**
 
-Backend Developer | Java | Spring Boot | REST APIs | MySQL
+Java Backend Developer | Java | Spring Boot |Microservices | REST APIs | MySQL
 
 ---
 
 # Acknowledgements
 
-This project was developed to demonstrate enterprise backend development concepts using Spring Boot, following clean architecture and industry-standard coding practices.
+
+This project was made possible thanks to the support and inspiration from:
+
+- **Spring Boot & Java Community** – for providing robust frameworks and documentation.  
+- **Open Source Contributors** – whose tutorials and examples guided the implementation of clean architecture.  
+- **DelftStack & Developer Forums** – for solutions to common Java errors and iteration issues.  
+- **GitHub** – for hosting and collaboration tools.  
+- **Microsoft Copilot & AI Assistants** – for guidance in structuring documentation and improving clarity.
+
+- Special thanks to everyone who contributed ideas, feedback, or resources that helped shape this project. 
