@@ -18,11 +18,9 @@ The application follows a **clean layered architecture**:
 
 ## User Management
 
-* Register new users
-* Retrieve user information
-* Update user details
-* Delete users
-* Input validation using Jakarta Validation
+* Register, update, delete users  
+* Retrieve user details  
+* Input validation with Jakarta Validation
 
 ---
 
